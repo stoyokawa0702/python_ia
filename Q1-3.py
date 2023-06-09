@@ -1,29 +1,15 @@
-user_input_number1 = input()
-user_input_number2 = input()
-user_input_number3 = input()
 
-number_list = []
-number_list.insert(0,int(user_input_number1))
-number_list.insert(1,int(user_input_number2))
-number_list.insert(2,int(user_input_number3))
-sorted_number_list = sorted(number_list,reverse=True)
+# 演習問題3.
+# 上のプログラムの末尾に1行追加し、辞書のgetメソッドを使い、入力したvalueをprint関数で表示してみましょう
 
-print(sorted_number_list)
+data_dict = {}
 
-# これが解答
+key = input('keyを入力してください > ')  # 辞書のkeyを入力してもらう
+value = input('valueを入力してください > ')  # 辞書のvalueを入力してもらう
 
-# number_list = []
-#
-# user_input_number = input()
-# number_list.insert(0,int(user_input_number))
-#
-# user_input_number = input()
-# number_list.insert(0,int(user_input_number))
-#
-# user_input_number = input()
-# number_list.insert(0,int(user_input_number))
-#
-# sorted_number_list = sorted(number_list,reverse=True)
-#
-# print(sorted_number_list)
+data_dict = {key:value}
+# こっちでもいい
+# data_dict[key] = value
 
+print(data_dict)
+print(data_dict.get(key))

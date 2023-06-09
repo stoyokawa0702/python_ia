@@ -1,18 +1,13 @@
-
-dic = {
-    '水':'water',
-    '火':'fire',
-    '風':'wind',
-    1:'one',
-    (1,1,1):6,
-    (6,6,6):3
-}
-
-dic['水'] = 'abc'
-
-print(dic['水'])
-print(dic[1])
-print(dic[(1,1,1)])
-
+for i in range(2, 100):
+  if i == 2:
+    print(i)
+  else:
+    for n in range(2, i):
+      if i % n == 0:
+        break
+      elif n == i - 1:
+        print(i)
+      else:
+        pass
 
 

@@ -1,23 +1,14 @@
-user_input_number1 = input()
-user_input_number2 = input()
-user_input_number3 = input()
+# 演習問題2.
+# 上のプログラムの末尾に1行追加し、辞書の「辞書オブジェクト[キー名]」構文を使い、入力したvalueをprint関数で表示してみましょう。
 
-number_list = [int(user_input_number1),int(user_input_number2),int(user_input_number3)]
-sorted_number_list = sorted(number_list)
-print(sorted_number_list)
+data_dict = {}
 
-# 答えはこっち
+key = input('keyを入力してください > ')  # 辞書のkeyを入力してもらう
+value = input('valueを入力してください > ')  # 辞書のvalueを入力してもらう
 
-# number_list = []
-#
-# user_input_number = input()
-# number_list.append(int(user_input_number))
-#
-# user_input_number = input()
-# number_list.append(int(user_input_number))
-#
-# user_input_number = input()
-# number_list.append(int(user_input_number))
-#
-# number_list.sort()
-# print(number_list)
+data_dict = {key:value}
+# こっちでもいい
+# data_dict[key] = value
+
+print(data_dict)
+print(data_dict[key])
